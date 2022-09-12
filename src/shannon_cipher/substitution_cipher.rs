@@ -3,10 +3,10 @@
 /// A substitution cipher is a shannon cipher epsilon = (E, D) of the following form:
 /// Let sigma be a finite alphabet of symbols. The message space M and the ciphertext space C
 /// are both sequences of symbols from sigma of some fixed length L:
-/// M := C := sigma^L, that means the Message space is the same size as sigma^L, in plain English, that is,
-///     every character from M comes from the finite alphabet of symbols, denoted as sigma^L
-/// Think of K as a transpiler, that translate A to Z, and there is a reverse transpiler,
-/// denoted as K^-1, translate Z back to A. Apply this back and forth mechanism on cipher methodology,
+/// M := C := sigma^L, that means the Message space is the same size as sigma^L, 
+/// in plain English, that is, every character from M comes from the finite alphabet of symbols, denoted as sigma^L;
+/// Think of K as a transpiler, that translates A to Z, and there is a reverse transpiler,
+/// denoted as K^-1, translates Z back to A. Apply this back and forth mechanism on cipher methodology,
 /// we have encryption as encrypt(K, plaintext), and decryption as decrypt(K^-1, plaintext)
 ///
 use rand::seq::SliceRandom;
